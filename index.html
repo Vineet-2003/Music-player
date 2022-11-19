@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+rel="stylesheet"  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+crossorigin="anonymous"
+/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="fa fa-angle-down"></i>
+            <i class="fa fa-ellipsis-v"></i>
+        </div>
+    </div>
+    <div  class="wrapper1">
+        <div class="status">
+            <div class="title">PLAYING FROM PLAYLIST</div>
+            <div class="playlist-name">Dreamland</div>
+        </div>
+        <div class="img-area">
+            <img src="images/music-1.jpg" alt="">
+        </div>
+        <div class="song-info">
+            <span class="song-name">Heat Waves</span>
+            <span class="like"><i class="fa fa-heart fav"></i></span>
+        </div>
+        <span class="album-name">Glass Animals</span>
+        <div class="progress-area">
+            <div class="progress-bar"></div>
+            <audio src="songs/song-1.mp3" id="main-audio"></audio>
+        </div>
+
+        <div class="controls">
+            <i class="fa fa-step-backward backward" id="prev"></i>
+            <i class="fa fa-play-circle play play-pause"></i>
+            <i class="fa fa-step-forward forward" id="next"></i>
+
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+<script src="script.js"></script>
+</html>

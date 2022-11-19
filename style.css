@@ -1,0 +1,141 @@
+/* variable used in css */
+:root{
+    --pink : #ff0099;
+    --light-brown : #4e2545;
+    --red : #e23c08;
+    --brown : #2a2016;
+    --blue : #03bff8;
+    --black : #031619;
+}
+
+
+body{
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    min-width: 100vw;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* top bar */
+.wrapper{
+    padding: 25px 25px;
+    margin: 0;
+    min-width: 92vw;
+    /* font-size: 1.6rem; */
+}
+.top-bar{
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-bar i{
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+/* secondary box */
+.wrapper1{
+    align-self: center;
+    padding: 25px 25px;
+    margin: 0;
+    width: 65%;
+    /* font-size: 1.6rem; */
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.status .title{
+    font-size: 1.6rem;
+}
+.status .playlist-name{
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+    font-family: 'Lato', sans-serif;
+
+}
+.img-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-area img{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 67px;
+}
+.song-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+.song-info .like{
+    cursor: pointer;
+}
+.album-name{
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: whitesmoke;
+    padding-bottom: 10px;
+
+}
+.progress-area{
+    height: 1.5px;
+    width: 100%;
+    margin-top: 20px;
+    background: rgba(210, 210, 210, 0.768);
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.progress-area .progress-bar{
+    height: 4px;
+    width: 50%;
+    position: relative;
+    border-radius: inherit;
+    background-color: white;
+}
+.progress-bar::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: black;
+    border-radius: inherit;
+    top:50%;
+    right: -5px;
+    transform: translateY(-50%);
+    background: inherit;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.progress-ares:hover .progress-bar::before{
+    opacity: 1;
+}
+.controls{
+    padding: 50px 0;
+    font-size: 1.3rem;
+    cursor: pointer;
+    align-self: center;
+    justify-items: center;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.controls .play{
+    font-size: 3rem;
+}
